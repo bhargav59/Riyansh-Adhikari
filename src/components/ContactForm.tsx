@@ -300,7 +300,7 @@ export default function ContactForm() {
                 </button>
                 <p className="text-xs text-white/35">
                   Opens your email client with the inquiry prefilled ·{" "}
-                  {profile.email}
+                  {profile.email} · {profile.phone}
                 </p>
               </div>
             </form>

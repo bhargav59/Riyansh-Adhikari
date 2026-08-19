@@ -8,7 +8,83 @@ export const profile = {
     "The first Mr. Model of Sarlahi — from pageantry to the national runway.",
   // SWAP: Replace with the booking email / agency contact.
   email: "wowrupesh@gmail.com",
+  phone: "+977-9827691993",
 };
+
+export const career = [
+  {
+    period: "May 2024 — Present",
+    role: "Senior Associate — Front Office (Sales-Focused)",
+    company: "Hotel Diyalo Pvt. Ltd",
+    location: "Nepal",
+    points: [
+      "Handle guest services while supporting the Sales Department in lead generation.",
+      "Collaborate with the sales team on promotional campaigns and group bookings.",
+      "Manage OTA platforms and follow up on client inquiries and conversions.",
+      "Assist in preparing sales reports and tracking booking trends.",
+    ],
+  },
+  {
+    period: "March 2023 — April 2024",
+    role: "Sales Executive / Supervisor — Front Office Department",
+    company: "Hotel Ichchha Ltd",
+    location: "Simara, Nepal",
+    points: [
+      "Contribute to hotel sales and marketing initiatives.",
+      "Manage corporate and group bookings, travel agency coordination, and lead follow-ups.",
+      "Maintain and update OTA listings, pricing, and promotions.",
+      "Analyze sales performance and contribute to revenue growth strategies.",
+      "Supervise front office staff while maintaining high guest satisfaction.",
+    ],
+  },
+  {
+    period: "November 2022 — May 2023",
+    role: "Intern — Front Office Department",
+    company: "Hotel Mystic Mountain",
+    location: "Nagarkot, Nepal",
+    points: [
+      "Support guest relations and daily front desk operations.",
+      "Assist in reservation processes and marketing communications.",
+      "Gain exposure to luxury hotel branding and customer engagement.",
+    ],
+  },
+];
+
+export const careerSkills = [
+  {
+    skill: "Hotel Sales & Marketing",
+    detail: "Lead generation · campaigns · group bookings",
+  },
+  {
+    skill: "OTA Management",
+    detail: "Booking.com · MMT · Goibibo · Roamwing",
+  },
+  {
+    skill: "Guest Relationship Building",
+    detail: "Front office · guest satisfaction",
+  },
+  {
+    skill: "Sales Reporting & Market Analysis",
+    detail: "Booking trends · revenue strategies",
+  },
+  {
+    skill: "Hotel Software",
+    detail: "IDS · Aegis",
+  },
+  {
+    skill: "Microsoft Office",
+    detail: "Excel · Word · Outlook",
+  },
+];
+
+export const languages = [
+  "Nepali",
+  "English",
+  "Hindi",
+  "Bajjika",
+  "Maithili",
+  "Bhojpuri",
+];
 
 export const socials = [
   {

@@ -19,6 +19,7 @@ export default function Footer() {
             ["Press", "#press"],
             ["Gallery", "#gallery"],
             ["Connect", "#connect"],
+            ["Career", "#career"],
             ["Contact", "#contact"],
           ].map(([label, href]) => (
             <a
