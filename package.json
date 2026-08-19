@@ -1,9 +1,9 @@
 {
-  "name": "riyansh-portfolio",
+  "name": "riyansh-adhikari",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "opennextjs-cloudflare build",
+    "build": "next build",
     "dev": "next dev",
     "start": "next start",
     "lint": "eslint",
