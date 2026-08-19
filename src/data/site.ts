@@ -7,7 +7,7 @@ export const profile = {
   tagline:
     "The first Mr. Model of Sarlahi — from pageantry to the national runway.",
   // SWAP: Replace with the booking email / agency contact.
-  email: "riyansh.adhikari.model@gmail.com",
+  email: "wowrupesh@gmail.com",
 };
 
 export const socials = [
