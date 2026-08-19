@@ -17,6 +17,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  // SWAP: Replace with your custom domain once assigned, e.g. "https://riyansh.example.com"
+  metadataBase: new URL("https://riyansh-adhikari.pages.dev"),
   title: "Riyansh Adhikari — Mr. Sarlahi 2021 | High-Fashion & Runway Model",
   description:
     "Riyansh Adhikari (Rupesh Kumar Yadav), winner of Sarlahi Fashion Runway 2021 and former Brand Ambassador of Pageant Nepal International. High-fashion and runway model from Sarlahi, Nepal. Book him for campaigns, fashion shows and editorial shoots.",
