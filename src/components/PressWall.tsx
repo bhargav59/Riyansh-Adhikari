@@ -161,6 +161,16 @@ export default function PressWall() {
               <p className="font-serif text-lg italic leading-relaxed text-white/70">
                 “{pni.pullQuote}”
               </p>
+              <div className="relative mt-5 aspect-[4/5] overflow-hidden rounded-xl border border-white/10">
+                <Image
+                  src={pni.image ?? ""}
+                  alt="Riyansh Adhikari — official Pageant Nepal International studio portrait, photographed by Suman Raya Majhi"
+                  fill
+                  loading="lazy"
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
               <p className="mt-4 text-sm leading-relaxed text-white/50">
                 {pni.body[0]}
               </p>
@@ -171,7 +181,7 @@ export default function PressWall() {
                 className="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-gold transition-colors hover:text-gold-soft"
               >
                 <ExternalLink className="h-3.5 w-3.5" />
-                Pageant Nepal International — Facebook
+                View the official shoot — Facebook
               </a>
             </article>
           </Reveal>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Quote, ArrowUpRight } from "lucide-react";
 import { profile, socials } from "@/data/site";
 import { socialIconMap } from "@/components/SocialIcons";
@@ -53,41 +54,60 @@ export default function BioConnect() {
               className="absolute right-8 top-8 h-16 w-16 text-gold/10"
               aria-hidden="true"
             />
-            <p className="mb-6 text-[11px] font-semibold uppercase tracking-[0.35em] text-gold">
-              The Story
-            </p>
-            <h3 className="max-w-xl font-serif text-3xl font-light leading-snug text-white md:text-4xl">
-              &ldquo;I&apos;m the first model of Sarlahi runway — and this is my
-              award taking time.&rdquo;
-            </h3>
-            <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-white/60">
-              <p>
-                Born and raised in Sarlahi, Nepal, {profile.stageName} — known
-                to family and friends as {profile.legalName} — began his
-                journey in the humble halls of his hometown. In October 2021,
-                on the stage of the Sarlahi Fashion Runway at Samrat Hotel,
-                Harivan, he claimed the crown among 17 competing models,
-                becoming the first Mr. Model of Sarlahi.
-              </p>
-              <p>
-                The title opened doors beyond the runway. As a one-year Brand
-                Ambassador of Pageant Nepal International, he fronted
-                promotional shoots and campaigns; his walk, choreographed by
-                fashion veteran Dikpal Karki, drew national attention through
-                Rajya Dainik and TV Today&apos;s entertainment programming.
-              </p>
-              <p>
-                Today he moves between ramps in Sarlahi and the streets of
-                Kathmandu — a runway athlete, editorial face and music-driven
-                creative building a distinctly Nepali high-fashion identity.
-              </p>
+            <div className="flex flex-col gap-10 md:flex-row md:items-start">
+              <div className="relative mx-auto w-56 shrink-0 overflow-hidden rounded-2xl border border-gold/30 shadow-[0_20px_60px_rgba(0,0,0,0.5)] md:mx-0 md:w-64">
+                <Image
+                  src="/images/pni-studio-01.jpg"
+                  alt="Riyansh Adhikari — official Pageant Nepal International studio portrait"
+                  width={600}
+                  height={750}
+                  priority
+                  className="aspect-[4/5] w-full object-cover"
+                />
+                <p className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 to-transparent px-4 pb-3 pt-8 text-[10px] font-semibold uppercase tracking-[0.2em] text-gold">
+                  PNI Studio · Kathmandu
+                </p>
+              </div>
+              <div className="flex-1">
+                <p className="mb-6 text-[11px] font-semibold uppercase tracking-[0.35em] text-gold">
+                  The Story
+                </p>
+                <h3 className="max-w-xl font-serif text-3xl font-light leading-snug text-white md:text-4xl">
+                  &ldquo;I&apos;m the first model of Sarlahi runway — and this
+                  is my award taking time.&rdquo;
+                </h3>
+                <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-white/60">
+                  <p>
+                    Born and raised in Sarlahi, Nepal, {profile.stageName} —
+                    known to family and friends as {profile.legalName} — began
+                    his journey in the humble halls of his hometown. In October
+                    2021, on the stage of the Sarlahi Fashion Runway at Samrat
+                    Hotel, Harivan, he claimed the crown among 17 competing
+                    models, becoming the first Mr. Model of Sarlahi.
+                  </p>
+                  <p>
+                    The title opened doors beyond the runway. As a one-year
+                    Brand Ambassador of Pageant Nepal International, he fronted
+                    studio shoots in Kathmandu and national campaigns; his
+                    walk, choreographed by fashion veteran Dikpal Karki, drew
+                    attention through Rajya Dainik and TV Today&apos;s
+                    entertainment programming.
+                  </p>
+                  <p>
+                    Today he moves between ramps in Sarlahi and the streets of
+                    Kathmandu — a runway athlete, editorial face and
+                    music-driven creative building a distinctly Nepali
+                    high-fashion identity.
+                  </p>
+                </div>
+                <a
+                  href="#contact"
+                  className="mt-9 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-gold transition-colors hover:text-gold-soft"
+                >
+                  Work with him <ArrowUpRight className="h-4 w-4" />
+                </a>
+              </div>
             </div>
-            <a
-              href="#contact"
-              className="mt-9 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-gold transition-colors hover:text-gold-soft"
-            >
-              Work with him <ArrowUpRight className="h-4 w-4" />
-            </a>
           </article>
         </Reveal>
 

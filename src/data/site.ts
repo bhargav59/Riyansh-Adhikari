@@ -36,7 +36,7 @@ export const socials = [
 export const stats = [
   {
     label: "Height",
-    value: "6'1\"",
+    value: "5'7\"",
     detail: "Standard runway fit",
     icon: "ruler",
   },
@@ -140,15 +140,15 @@ export const press = [
     headline: "Brand Ambassador — 2021–2022",
     headlineEn: "Brand Ambassador — 2021–2022",
     date: "October 2021 — 2022",
-    url: "https://www.facebook.com/pagentnepalinternational/",
-    image: null,
+    url: "https://www.facebook.com/pagentnepalinternational/posts/1034610787323490/",
+    image: "/images/pni-studio-01.jpg",
     pullQuote:
-      "Promotional shoot with the winner of Sarlahi Fashion Runway 2021 — one year as official Brand Ambassador.",
+      "Recent Shoot of Sarlahi Fashion Runway 2021 winners at Pageant Nepal International Studio at Kathmandu — In Frame: Riyansh Adikari, Ronit Shrivastav.",
     pullQuoteEn:
-      "Promotional shoot with the winner of Sarlahi Fashion Runway 2021 — one year as official Brand Ambassador.",
+      "Recent Shoot of Sarlahi Fashion Runway 2021 winners at Pageant Nepal International Studio at Kathmandu — In Frame: Riyansh Adikari, Ronit Shrivastav. Photography by Suman Raya Majhi. Concept by Dikpal Karki.",
     body: [
-      "As part of his title, Riyansh served a one-year term as Brand Ambassador of Pageant Nepal International, participating in promotional shoots and national-level campaigns.",
-      "The ambassadorship cemented his transition from regional pageantry to the professional modelling circuit in Nepal.",
+      "As part of his title, Riyansh served a one-year term as Brand Ambassador of Pageant Nepal International, participating in studio shoots and national-level campaigns.",
+      "His official ambassador portrait was photographed at the Pageant Nepal International Studio in Kathmandu by Suman Raya Majhi, with concept by Dikpal Karki — cementing his transition from regional pageantry to the professional modelling circuit in Nepal.",
     ],
   },
 ] as const;

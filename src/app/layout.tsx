@@ -38,10 +38,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://i.ytimg.com/vi/erHy7L1pwcs/maxresdefault.jpg",
-        width: 1280,
-        height: 720,
-        alt: "Riyansh Adhikari — Mr. Sarlahi award moment",
+        url: "/images/pni-studio-01.jpg",
+        width: 600,
+        height: 750,
+        alt: "Riyansh Adhikari — Mr. Sarlahi 2021, official studio portrait",
       },
     ],
   },
