@@ -124,7 +124,7 @@ export const socials = [
 export const stats = [
   {
     label: "Height",
-    value: "5'7\"",
+    value: "5'8\"",
     detail: "Standard runway fit",
     icon: "ruler",
   },
