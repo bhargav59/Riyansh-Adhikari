@@ -25,7 +25,7 @@ export const career = [
     ],
   },
   {
-    period: "May 2024 — Present",
+    period: "May 2024 — December 2025",
     role: "Senior Associate — Front Office (Sales-Focused)",
     company: "Hotel Diyalo Pvt. Ltd",
     location: "Nepal",

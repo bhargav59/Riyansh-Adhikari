@@ -1,5 +1,5 @@
-import { Briefcase, Languages, Phone, BadgeCheck } from "lucide-react";
-import { career, careerSkills, languages, profile } from "@/data/site";
+import { Briefcase, Languages, BadgeCheck } from "lucide-react";
+import { career, careerSkills, languages } from "@/data/site";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
@@ -92,23 +92,6 @@ export default function CareerSection() {
                   </span>
                 ))}
               </div>
-            </article>
-
-            <article className="rounded-2xl border border-gold/30 bg-ink p-8">
-              <h3 className="mb-4 flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.35em] text-gold">
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                Direct Line
-              </h3>
-              <a
-                href={`tel:${profile.phone.replace(/[^+\d]/g, "")}`}
-                className="font-serif text-2xl font-light text-white transition-colors hover:text-gold"
-              >
-                {profile.phone}
-              </a>
-              <p className="mt-2 text-xs leading-relaxed text-white/40">
-                Available for modeling campaigns and hospitality sales
-                partnerships across Nepal.
-              </p>
             </article>
           </div>
         </Reveal>
