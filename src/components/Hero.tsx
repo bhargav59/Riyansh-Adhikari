@@ -24,12 +24,12 @@ export default function Hero() {
       {/* SWAP: Replace with a full-bleed editorial portrait of Riyansh */}
       <div className="absolute inset-0">
         <Image
-          src="https://i.ytimg.com/vi/erHy7L1pwcs/maxresdefault.jpg"
-          alt="Riyansh Adhikari — Mr. Sarlahi 2021, award moment on the runway"
+          src="/images/fb-hero-01.jpg"
+          alt="Riyansh Adhikari — Mr. Sarlahi 2021, editorial portrait"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/30" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-ink/40" />
