@@ -254,6 +254,9 @@ export type GalleryItem = {
   location?: string;
   // SWAP: Replace `src` with Riyansh's own high-res editorial images
   //       (e.g. files in /public/gallery/riyansh-01.jpg) when available.
+  // When set, the tile shows a play badge and opens the video on its
+  // hosting platform (YouTube / TikTok).
+  videoUrl?: string;
 };
 
 export const gallery: GalleryItem[] = [
@@ -264,6 +267,7 @@ export const gallery: GalleryItem[] = [
     category: "Runway",
     caption: "Award moment — first Mr. Model of Sarlahi",
     location: "Sarlahi, Nepal",
+    videoUrl: "https://www.youtube.com/watch?v=erHy7L1pwcs",
   },
   {
     src: "https://i.ytimg.com/vi/v_sX9z1PTYk/maxresdefault.jpg",
@@ -272,14 +276,7 @@ export const gallery: GalleryItem[] = [
     category: "Runway",
     caption: "Fashion show in Sarlahi — on stage",
     location: "Sarlahi, Nepal",
-  },
-  {
-    src: "https://i.ytimg.com/vi/yj2F1G-wkEM/maxresdefault.jpg",
-    width: 1280,
-    height: 720,
-    category: "Runway",
-    caption: "Sarlahi Fashion Runway 2021 — event coverage",
-    location: "Samrat Hotel, Harivan",
+    videoUrl: "https://www.youtube.com/watch?v=v_sX9z1PTYk",
   },
   {
     src: "https://i.ytimg.com/vi/rVx3u9nSGGM/maxresdefault.jpg",
