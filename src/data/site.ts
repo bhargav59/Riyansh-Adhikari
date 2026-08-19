@@ -13,6 +13,18 @@ export const profile = {
 
 export const career = [
   {
+    period: "January 2026 — July 2026",
+    role: "Cluster Sales Executive",
+    company: "Lords Group of Hotels Nepal",
+    location: "Nepal",
+    points: [
+      "Drive room sales and revenue growth across the hotel group.",
+      "Manage corporate and group bookings, travel agency coordination, and lead follow-ups.",
+      "Maintain and update OTA listings, pricing, and promotions.",
+      "Build and nurture client relationships to boost occupancy and repeat business.",
+    ],
+  },
+  {
     period: "May 2024 — Present",
     role: "Senior Associate — Front Office (Sales-Focused)",
     company: "Hotel Diyalo Pvt. Ltd",
