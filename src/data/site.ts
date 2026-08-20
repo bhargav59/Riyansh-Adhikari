@@ -168,12 +168,6 @@ export const videos = [
     url: "https://www.youtube.com/watch?v=erHy7L1pwcs",
   },
   {
-    id: "yj2F1G-wkEM",
-    title: "Sarlahi Fashion Runway 2021 — Event Coverage",
-    source: "Dikpal Karki · YouTube",
-    url: "https://www.youtube.com/watch?v=yj2F1G-wkEM",
-  },
-  {
     id: "v_sX9z1PTYk",
     title: "Fashion Show in Sarlahi — On Stage",
     source: "Riyansh Adhikari · YouTube",
