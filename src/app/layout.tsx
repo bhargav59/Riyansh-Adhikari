@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
+import { profile, socials, videos, faq } from "@/data/site";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -16,12 +17,18 @@ const inter = Inter({
   display: "swap",
 });
 
+const siteUrl = "https://riyansh-adhikari.pages.dev";
+const siteName = "Riyansh Adhikari — Mr. Sarlahi 2021";
+const description =
+  "Riyansh Adhikari (Rupesh Kumar Yadav), winner of Sarlahi Fashion Runway 2021 and former Brand Ambassador of Pageant Nepal International. High-fashion and runway model from Sarlahi, Nepal. Book for campaigns, fashion shows and editorial shoots.";
+
 export const metadata: Metadata = {
-  // SWAP: Replace with your custom domain once assigned, e.g. "https://riyansh.example.com"
-  metadataBase: new URL("https://riyansh-adhikari.pages.dev"),
-  title: "Riyansh Adhikari — Mr. Sarlahi 2021 | High-Fashion & Runway Model",
-  description:
-    "Riyansh Adhikari (Rupesh Kumar Yadav), winner of Sarlahi Fashion Runway 2021 and former Brand Ambassador of Pageant Nepal International. High-fashion and runway model from Sarlahi, Nepal. Book him for campaigns, fashion shows and editorial shoots.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteName,
+    template: `%s | ${siteName}`,
+  },
+  description,
   keywords: [
     "Riyansh Adhikari",
     "Rupesh Kumar Yadav",
@@ -30,14 +37,25 @@ export const metadata: Metadata = {
     "Pageant Nepal International",
     "Nepal model",
     "fashion model Nepal",
-    "runway model",
+    "runway model Nepal",
+    "Mr. Model of Sarlahi",
+    "Nepali male model",
   ],
+  authors: [{ name: "Riyansh Adhikari", url: siteUrl }],
+  creator: "Riyansh Adhikari",
+  publisher: "Riyansh Adhikari",
+  category: "Fashion Model Portfolio",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Riyansh Adhikari — Mr. Sarlahi 2021",
-    description:
-      "Winner, Sarlahi Fashion Runway 2021 · Former Brand Ambassador, Pageant Nepal International. High-fashion & runway model from Nepal.",
-    type: "website",
+    title: siteName,
+    description,
+    url: siteUrl,
+    type: "profile",
+    siteName,
     locale: "en_US",
+    firstName: "Riyansh",
+    lastName: "Adhikari",
+    username: "RiyanshAdhikari",
     images: [
       {
         url: "/images/pni-studio-01.jpg",
@@ -47,13 +65,124 @@ export const metadata: Metadata = {
       },
     ],
   },
-  robots: { index: true, follow: true },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description,
+    images: ["/images/pni-studio-01.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.png",
+  },
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    title: "Riyansh Adhikari",
+    statusBarStyle: "black-translucent",
+  },
+  formatDetection: {
+    telephone: false,
+    email: false,
+  },
+  other: {
+    "geo.region": "NP-P2",
+    "geo.placename": "Sarlahi, Nepal",
+    "geo.position": "26.8600;85.5300",
+    ICBM: "26.8600, 85.5300",
+  },
 };
 
 export const viewport: Viewport = {
   themeColor: "#0d0d0d",
   width: "device-width",
   initialScale: 1,
+  viewportFit: "cover",
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
+      name: profile.stageName,
+      alternateName: profile.legalName,
+      url: siteUrl,
+      image: `${siteUrl}/images/pni-studio-01.jpg`,
+      description,
+      jobTitle: ["High-Fashion & Runway Model", "Cluster Sales Executive"],
+      nationality: "Nepalese",
+      birthPlace: { "@type": "Place", name: "Sarlahi, Nepal" },
+      homeLocation: { "@type": "Place", name: "Sarlahi, Nepal" },
+      knowsLanguage: [
+        "Nepali",
+        "English",
+        "Hindi",
+        "Bajjika",
+        "Maithili",
+        "Bhojpuri",
+      ],
+      award: [
+        "Mr. Sarlahi 2021 — Sarlahi Fashion Runway",
+        "Brand Ambassador, Pageant Nepal International (1 year)",
+      ],
+      sameAs: socials.map((social) => social.url),
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: siteName,
+      description,
+      inLanguage: "en",
+      publisher: { "@id": `${siteUrl}/#person` },
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": `${siteUrl}/#webpage`,
+      url: siteUrl,
+      name: siteName,
+      description,
+      inLanguage: "en",
+      isPartOf: { "@id": `${siteUrl}/#website` },
+      about: { "@id": `${siteUrl}/#person` },
+      primaryImageOfPage: `${siteUrl}/images/pni-studio-01.jpg`,
+    },
+    ...videos.map((video) => ({
+      "@type": "VideoObject",
+      name: video.title,
+      description: video.title,
+      thumbnailUrl: `https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`,
+      uploadDate: "2021-10-17",
+      embedUrl: `https://www.youtube.com/embed/${video.id}`,
+      contentUrl: video.url,
+      publisher: { "@id": `${siteUrl}/#person` },
+    })),
+    {
+      "@type": "FAQPage",
+      "@id": `${siteUrl}/#faq`,
+      mainEntity: faq.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -61,6 +190,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+      <head>
+        <link rel="canonical" href={siteUrl} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body className="min-h-screen bg-ink text-cream antialiased">
         <a
           href="#main"

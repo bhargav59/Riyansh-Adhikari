@@ -98,6 +98,34 @@ export const languages = [
   "Bhojpuri",
 ];
 
+export const faq = [
+  {
+    question: "Who is Riyansh Adhikari?",
+    answer:
+      "Riyansh Adhikari (born Rupesh Kumar Yadav, 2004, Sarlahi, Nepal) is a Nepali high-fashion and runway model. He is best known as the winner of the Sarlahi Fashion Runway 2021 — the first Mr. Model of Sarlahi — and as a one-year Brand Ambassador of Pageant Nepal International.",
+  },
+  {
+    question: "What is the Sarlahi Fashion Runway 2021?",
+    answer:
+      "Organised by Bright Event Management at Samrat Hotel, Harivan, the Sarlahi Fashion Runway 2021 featured 17 models — 13 male and 4 female — presenting outfits by Valentine the Boutique under the choreography of Dikpal Karki. Riyansh Adhikari and Asmita Shrestha were declared winners.",
+  },
+  {
+    question: "Is Riyansh Adhikari a professional model?",
+    answer:
+      "Yes. Beyond his pageant title, Riyansh works professionally in the hospitality sales industry while pursuing ramp walks, editorial shoots and campaigns across Nepal, including studio work photographed by Suman Raya Majhi for Pageant Nepal International.",
+  },
+  {
+    question: "How tall is Riyansh Adhikari?",
+    answer:
+      "Riyansh Adhikari stands 5'8\" (1.73 m) with dark brown eyes and black hair — a standard runway fit for high-fashion work.",
+  },
+  {
+    question: "How can I book Riyansh Adhikari for a campaign?",
+    answer:
+      "Use the booking form on this website — it opens a prefilled email to the management team with your event details, dates and location. He is available for ramp walks, editorial print, campaign shoots and brand appearances across Nepal and beyond.",
+  },
+];
+
 export const socials = [
   {
     name: "Instagram",

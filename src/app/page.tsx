@@ -5,6 +5,7 @@ import PressWall from "@/components/PressWall";
 import PortfolioGallery from "@/components/PortfolioGallery";
 import BioConnect from "@/components/BioConnect";
 import CareerSection from "@/components/CareerSection";
+import FaqSection from "@/components/FaqSection";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <PortfolioGallery />
         <BioConnect />
         <CareerSection />
+        <FaqSection />
         <ContactForm />
       </main>
       <Footer />
